@@ -46,14 +46,14 @@
 
 @implementation UIPopoverController (BlocksKit)
 
-@dynamic bk_didDismissBlock, bk_shouldDismissBlock;
-
-+ (void)load
-{
-	@autoreleasepool {
-		[self bk_registerDynamicDelegate];
-		[self bk_linkDelegateMethods:@{ @"bk_didDismissBlock": @"popoverControllerDidDismissPopover:", @"bk_shouldDismissBlock": @"popoverControllerShouldDismissPopover:" }];
-	}
-}
+//@dynamic bk_didDismissBlock, bk_shouldDismissBlock;
+//
+//+ (void)load
+//{
+//	@autoreleasepool {
+//		[self bk_registerDynamicDelegate];
+//		[self bk_linkDelegateMethods:@{ @"bk_didDismissBlock": @"popoverControllerDidDismissPopover:", @"bk_shouldDismissBlock": @"popoverControllerShouldDismissPopover:" }];
+//	}
+//}
 
 @end

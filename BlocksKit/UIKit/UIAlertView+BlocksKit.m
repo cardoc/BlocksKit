@@ -112,21 +112,21 @@
 
 @implementation UIAlertView (BlocksKit)
 
-@dynamic bk_willShowBlock, bk_didShowBlock, bk_willDismissBlock, bk_didDismissBlock, bk_shouldEnableFirstOtherButtonBlock;
-
-+ (void)load
-{
-	@autoreleasepool {
-		[self bk_registerDynamicDelegate];
-		[self bk_linkDelegateMethods:@{
-			@"bk_willShowBlock": @"willPresentAlertView:",
-			@"bk_didShowBlock": @"didPresentAlertView:",
-			@"bk_willDismissBlock": @"alertView:willDismissWithButtonIndex:",
-			@"bk_didDismissBlock": @"alertView:didDismissWithButtonIndex:",
-			@"bk_shouldEnableFirstOtherButtonBlock": @"alertViewShouldEnableFirstOtherButton:"
-		}];
-	}
-}
+//@dynamic bk_willShowBlock, bk_didShowBlock, bk_willDismissBlock, bk_didDismissBlock, bk_shouldEnableFirstOtherButtonBlock;
+//
+//+ (void)load
+//{
+//	@autoreleasepool {
+//		[self bk_registerDynamicDelegate];
+//		[self bk_linkDelegateMethods:@{
+//			@"bk_willShowBlock": @"willPresentAlertView:",
+//			@"bk_didShowBlock": @"didPresentAlertView:",
+//			@"bk_willDismissBlock": @"alertView:willDismissWithButtonIndex:",
+//			@"bk_didDismissBlock": @"alertView:didDismissWithButtonIndex:",
+//			@"bk_shouldEnableFirstOtherButtonBlock": @"alertViewShouldEnableFirstOtherButton:"
+//		}];
+//	}
+//}
 
 #pragma mark Convenience
 

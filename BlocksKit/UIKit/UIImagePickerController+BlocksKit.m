@@ -40,16 +40,16 @@
 
 @implementation UIImagePickerController (BlocksKit)
 
-@dynamic bk_didFinishPickingMediaBlock;
-@dynamic bk_didCancelBlock;
-
-+ (void)load
-{
-	@autoreleasepool {
-		[self bk_registerDynamicDelegate];
-		[self bk_linkDelegateMethods:@{ @"bk_didFinishPickingMediaBlock": @"imagePickerController:didFinishPickingMediaWithInfo:",
-                                        @"bk_didCancelBlock": @"imagePickerControllerDidCancel:" }];
-	}
-}
+//@dynamic bk_didFinishPickingMediaBlock;
+//@dynamic bk_didCancelBlock;
+//
+//+ (void)load
+//{
+//	@autoreleasepool {
+//		[self bk_registerDynamicDelegate];
+//		[self bk_linkDelegateMethods:@{ @"bk_didFinishPickingMediaBlock": @"imagePickerController:didFinishPickingMediaWithInfo:",
+//                                        @"bk_didCancelBlock": @"imagePickerControllerDidCancel:" }];
+//	}
+//}
 
 @end

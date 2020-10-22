@@ -97,20 +97,20 @@
 
 @implementation UIActionSheet (BlocksKit)
 
-@dynamic bk_willShowBlock, bk_didShowBlock, bk_willDismissBlock, bk_didDismissBlock;
+//@dynamic bk_willShowBlock, bk_didShowBlock, bk_willDismissBlock, bk_didDismissBlock;
 
-+ (void)load
-{
-	@autoreleasepool {
-		[self bk_registerDynamicDelegate];
-		[self bk_linkDelegateMethods:@{
-			@"bk_willShowBlock": @"willPresentActionSheet:",
-			@"bk_didShowBlock": @"didPresentActionSheet:",
-			@"bk_willDismissBlock": @"actionSheet:willDismissWithButtonIndex:",
-			@"bk_didDismissBlock": @"actionSheet:didDismissWithButtonIndex:"
-		}];
-	}
-}
+//+ (void)load
+//{
+//	@autoreleasepool {
+//		[self bk_registerDynamicDelegate];
+//		[self bk_linkDelegateMethods:@{
+//			@"bk_willShowBlock": @"willPresentActionSheet:",
+//			@"bk_didShowBlock": @"didPresentActionSheet:",
+//			@"bk_willDismissBlock": @"actionSheet:willDismissWithButtonIndex:",
+//			@"bk_didDismissBlock": @"actionSheet:didDismissWithButtonIndex:"
+//		}];
+//	}
+//}
 
 #pragma mark Initializers
 

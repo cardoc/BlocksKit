@@ -320,15 +320,15 @@ static NSString *const kDownloadBlockKey = @"NSURLConnectionDidRecieveData";
 
 @implementation NSURLConnection (BlocksKit)
 
-@dynamic delegate, bk_responseBlock, bk_failureBlock;
+//@dynamic delegate, bk_responseBlock, bk_failureBlock;
 
-+ (void)load
-{
-	@autoreleasepool {
-		[self bk_registerDynamicDelegate];
-		[self bk_linkDelegateMethods:@{ @"bk_responseBlock": @"connection:didReceiveResponse:", @"bk_failureBlock": @"connection:didFailWithError:" }];
-	}
-}
+//+ (void)load
+//{
+//	@autoreleasepool {
+//		[self bk_registerDynamicDelegate];
+//		[self bk_linkDelegateMethods:@{ @"bk_responseBlock": @"connection:didReceiveResponse:", @"bk_failureBlock": @"connection:didFailWithError:" }];
+//	}
+//}
 
 #pragma mark Initializers
 

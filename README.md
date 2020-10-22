@@ -1,3 +1,6 @@
+[fork for Cardoc UserApp]
+UIWebView Extentension을 제거하고, Dynamic Delegate로 인터럽트한 부분을 제거하기 위한 포크
+
 [BlocksKit](https://zwaldowski.github.io/BlocksKit)
 ===================================================
 
@@ -47,4 +50,3 @@ Unsure about your rights?  [Read more.](http://opensource.org/licenses/MIT)
 Individual credits for included code exist in the header files and documentation. We thank them for their contributions to the open source community.
 
 Documentation help has been contributed by [Alex Gray](https://github.com/mralexgray).
-

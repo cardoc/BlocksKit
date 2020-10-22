@@ -121,38 +121,38 @@
 
 @implementation UITextView (BlocksKit)
 
-@dynamic bk_shouldBeginEditingBlock, bk_didBeginEditingBlock, bk_shouldEndEditingBlock, bk_didEndEditingBlock, bk_shouldChangeCharactersInRangeWithReplacementTextBlock, bk_didChangeBlock, bk_didChangeSelecionBlock, bk_shouldInteractWithTextAttachmentInRangeBlock, bk_shouldInteractWithURLInRangeBlock;
-
-+ (void)load {
-	[self bk_registerDynamicDelegate];
-	[self bk_linkDelegateMethods: @{
-									@"bk_shouldBeginEditingBlock":
-										@"textViewShouldBeginEditing:",
-									
-									@"bk_didBeginEditingBlock":
-										@"textViewDidBeginEditing:",
-									
-									@"bk_shouldEndEditingBlock":
-										@"textViewDidBeginEditing:",
-									
-									@"bk_didEndEditingBlock" :
-										@"textViewDidEndEditing:",
-									
-									@"bk_shouldChangeCharactersInRangeWithReplacementTextBlock" :
-										@"textView:shouldChangeTextInRange:replacementText:",
-									
-									@"bk_didChangeBlock" :
-										@"textViewDidChange:",
-									
-									@"bk_didChangeSelecionBlock" :
-										@"textViewDidChangeSelection:",
-									
-									@"bk_shouldInteractWithTextAttachmentInRangeBlock" :
-										@"textView:shouldInteractWithTextAttachment:inRange:",
-									
-									@"bk_shouldInteractWithURLInRangeBlock" :
-										@"textView:shouldInteractWithURL:inRange:",
-									}];
-}
+//@dynamic bk_shouldBeginEditingBlock, bk_didBeginEditingBlock, bk_shouldEndEditingBlock, bk_didEndEditingBlock, bk_shouldChangeCharactersInRangeWithReplacementTextBlock, bk_didChangeBlock, bk_didChangeSelecionBlock, bk_shouldInteractWithTextAttachmentInRangeBlock, bk_shouldInteractWithURLInRangeBlock;
+//
+//+ (void)load {
+//	[self bk_registerDynamicDelegate];
+//	[self bk_linkDelegateMethods: @{
+//									@"bk_shouldBeginEditingBlock":
+//										@"textViewShouldBeginEditing:",
+//									
+//									@"bk_didBeginEditingBlock":
+//										@"textViewDidBeginEditing:",
+//									
+//									@"bk_shouldEndEditingBlock":
+//										@"textViewDidBeginEditing:",
+//									
+//									@"bk_didEndEditingBlock" :
+//										@"textViewDidEndEditing:",
+//									
+//									@"bk_shouldChangeCharactersInRangeWithReplacementTextBlock" :
+//										@"textView:shouldChangeTextInRange:replacementText:",
+//									
+//									@"bk_didChangeBlock" :
+//										@"textViewDidChange:",
+//									
+//									@"bk_didChangeSelecionBlock" :
+//										@"textViewDidChangeSelection:",
+//									
+//									@"bk_shouldInteractWithTextAttachmentInRangeBlock" :
+//										@"textView:shouldInteractWithTextAttachment:inRange:",
+//									
+//									@"bk_shouldInteractWithURLInRangeBlock" :
+//										@"textView:shouldInteractWithURL:inRange:",
+//									}];
+//}
 
 @end

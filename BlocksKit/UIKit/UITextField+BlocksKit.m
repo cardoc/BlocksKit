@@ -102,19 +102,19 @@
 
 @implementation UITextField (BlocksKit)
 
-@dynamic bk_shouldBeginEditingBlock, bk_didBeginEditingBlock, bk_shouldEndEditingBlock, bk_didEndEditingBlock, bk_shouldChangeCharactersInRangeWithReplacementStringBlock, bk_shouldClearBlock, bk_shouldReturnBlock;
-
-+ (void)load {
-    [self bk_registerDynamicDelegate];
-    [self bk_linkDelegateMethods: @{
-        @"bk_shouldBeginEditingBlock": @"textFieldShouldBeginEditing:",
-        @"bk_didBeginEditingBlock": @"textFieldDidBeginEditing:",
-        @"bk_shouldEndEditingBlock": @"textFieldShouldEndEditing:",
-        @"bk_didEndEditingBlock" : @"textFieldDidEndEditing:",
-        @"bk_shouldChangeCharactersInRangeWithReplacementStringBlock" : @"textField:shouldChangeCharactersInRange:replacementString:",
-        @"bk_shouldClearBlock" : @"textFieldShouldClear:",
-        @"bk_shouldReturnBlock" : @"textFieldShouldReturn:",
-    }];
-}
+//@dynamic bk_shouldBeginEditingBlock, bk_didBeginEditingBlock, bk_shouldEndEditingBlock, bk_didEndEditingBlock, bk_shouldChangeCharactersInRangeWithReplacementStringBlock, bk_shouldClearBlock, bk_shouldReturnBlock;
+//
+//+ (void)load {
+//    [self bk_registerDynamicDelegate];
+//    [self bk_linkDelegateMethods: @{
+//        @"bk_shouldBeginEditingBlock": @"textFieldShouldBeginEditing:",
+//        @"bk_didBeginEditingBlock": @"textFieldDidBeginEditing:",
+//        @"bk_shouldEndEditingBlock": @"textFieldShouldEndEditing:",
+//        @"bk_didEndEditingBlock" : @"textFieldDidEndEditing:",
+//        @"bk_shouldChangeCharactersInRangeWithReplacementStringBlock" : @"textField:shouldChangeCharactersInRange:replacementString:",
+//        @"bk_shouldClearBlock" : @"textFieldShouldClear:",
+//        @"bk_shouldReturnBlock" : @"textFieldShouldReturn:",
+//    }];
+//}
 
 @end

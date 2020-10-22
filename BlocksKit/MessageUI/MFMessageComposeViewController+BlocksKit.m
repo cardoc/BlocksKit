@@ -58,14 +58,14 @@
 
 @implementation MFMessageComposeViewController (BlocksKit)
 
-@dynamic bk_completionBlock;
-
-+ (void)load
-{
-	@autoreleasepool {
-		[self bk_registerDynamicDelegateNamed:@"messageComposeDelegate"];
-		[self bk_linkDelegateMethods:@{ @"bk_completionBlock": @"messageComposeViewController:didFinishWithResult:" }];
-	}
-}
+//@dynamic bk_completionBlock;
+//
+//+ (void)load
+//{
+//	@autoreleasepool {
+//		[self bk_registerDynamicDelegateNamed:@"messageComposeDelegate"];
+//		[self bk_linkDelegateMethods:@{ @"bk_completionBlock": @"messageComposeViewController:didFinishWithResult:" }];
+//	}
+//}
 
 @end

@@ -32,15 +32,15 @@
 
 @implementation NSCache (BlocksKit)
 
-@dynamic bk_willEvictBlock;
+//@dynamic bk_willEvictBlock;
 
-+ (void)load
-{
-	@autoreleasepool {
-		[self bk_registerDynamicDelegate];
-		[self bk_linkDelegateMethods:@{ @"bk_willEvictBlock": @"cache:willEvictObject:" }];
-	}
-}
+//+ (void)load
+//{
+//	@autoreleasepool {
+//		[self bk_registerDynamicDelegate];
+//		[self bk_linkDelegateMethods:@{ @"bk_willEvictBlock": @"cache:willEvictObject:" }];
+//	}
+//}
 
 #pragma mark Methods
 

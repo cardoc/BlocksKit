@@ -58,14 +58,14 @@
 
 @implementation MFMailComposeViewController (BlocksKit)
 
-@dynamic bk_completionBlock;
+//@dynamic bk_completionBlock;
 
-+ (void)load
-{
-	@autoreleasepool {
-		[self bk_registerDynamicDelegateNamed:@"mailComposeDelegate"];
-		[self bk_linkDelegateMethods:@{ @"bk_completionBlock": @"mailComposeController:didFinishWithResult:error:" }];
-	}
-}
+//+ (void)load
+//{
+//	@autoreleasepool {
+//		[self bk_registerDynamicDelegateNamed:@"mailComposeDelegate"];
+//		[self bk_linkDelegateMethods:@{ @"bk_completionBlock": @"mailComposeController:didFinishWithResult:error:" }];
+//	}
+//}
 
 @end
